@@ -1,0 +1,23 @@
+/* FORM STYLINGS BEGINS */
+form {
+	label {
+		display: block;
+		margin: 10px 0;
+		text-transform: captialize;
+	}
+	
+	textarea, input:not([type="submit"]) {
+		margin-bottom: 15px;
+		padding: 15px;
+		border: 2px solid $lighterGrey;
+		border-radius: 3px;
+	}
+
+	input {
+		border-radius: 5px;
+	}
+
+	textarea {
+		height: 150px;
+	}
+}

@@ -1,0 +1,21 @@
+/* GET STARTED SECTION STYLES */
+section.get-started {
+	background-image: url(../images/backgrounds/bg2.jpg);
+	text-align: center;
+	padding: 45px 0;
+	span {
+		text-transform: uppercase;
+	}
+
+	h2 {
+		color: #ffffff;
+		font-size: 2.7rem;
+		letter-spacing: 1px;
+		margin-bottom: 0;
+	}
+
+	h3 {
+		color: $ctWhite;
+		margin-top: 5px;
+	}
+}

@@ -1,0 +1,168 @@
+/* HEADER STYLES */
+header {
+	background-image: url(../images/backgrounds/bg1.jpg);
+	padding: 20px 0;
+}
+
+/*nav stylings*/
+nav {
+	padding: 10px 0;
+}
+
+nav .wrapper {
+	display: flex;
+}
+
+div.logo {
+	width: 35%;
+	p,
+	h1 {
+		margin: 0;
+	}
+	
+	h1 {
+		font-size: 2.9rem;
+	}
+	p {
+		font-size: 1.2rem;
+		color: $ctWhite;
+	}
+}
+
+ul.main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 65%;
+	z-index: 20;
+	a:not(.btn) {
+		color: $ctWhite	;
+		padding: 10px;
+		border: 2px solid transparent;
+		transition: 
+			color 0.3s,
+			border 0.3s,
+			border-radius 0.3s,
+			font-size 0.3s;
+		&:hover {
+			color: #ffffff;
+			border: 2px solid #ffffff;
+			border-radius: 3px;
+		}
+	}
+}
+
+/* nav styling: hamburger menu */
+div.hamburger {
+	display: none;
+	width: 40px;
+	height: 40px;
+	z-index: 10;
+	position: relative;
+	background-image: linear-gradient(rgba(58, 182, 150, 0.75), rgba(23, 193, 194, 0.75));
+	border-radius: 3px;
+	span.hamburger-line {
+		position: absolute;
+		height: 3px;
+		width: 25px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		transition: all 0.3s;
+	}
+
+	span.top-line {
+		top: 10px;
+		left: 8px;
+	}
+
+	span.middle-line {
+		top: 19px;
+		left: 8px;
+	}
+
+	span.bottom-line {
+		top: 28px;
+		left: 8px;
+	}
+}
+
+div.hamburger:hover span.top-line {
+	width: 17px;
+	top: 14px;
+	left: 5px;
+	transform: rotate(-45deg);
+}
+
+div.hamburger:hover span.middle-line {
+	transform: rotate(180deg);
+}
+
+div.hamburger:hover span.bottom-line {
+	width: 17px;
+	left: 5px;
+	top: 24px;
+	transform: rotate(45deg);
+}
+
+/* nav styling: exit nav symbol */
+div.exit {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 50px;
+	left: 30px;
+	display: none;
+}
+
+span.exit-line {
+	position: absolute;
+	top: 18px;
+	left: 8px;
+	height: 4px;
+	width: 25px;
+	background-color: $teal;
+	border-radius: 3px;
+}
+
+span.left-line {
+	transform: rotate(45deg);
+}
+
+span.right-line {
+	transform: rotate(-45deg);
+}
+
+/*header content - under nav*/
+header .wrapper:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+header .container {
+	max-width: 700px;
+	margin: auto;
+	padding-top: 130px;
+}
+
+header .btn-outline {
+	margin: 10px 0 40px;
+}
+
+header h3 {
+	font-size: 1.8rem;
+}
+
+.scroll-dwn-btn {
+	color: $ctWhite;
+	cursor: pointer;
+	p {
+		margin-bottom: 5px;
+		font-size: 1rem;
+	}
+	.fa {
+		padding: 10px;
+		border: 2px solid $ctWhite;
+		border-radius: 50%;
+	}
+}

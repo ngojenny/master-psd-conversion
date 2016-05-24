@@ -1,0 +1,53 @@
+/*SERVICES SECTION STYLES*/
+section.services .container {
+	display: flex;
+	flex-wrap: wrap;
+	p {
+		font-size: 1rem;
+		padding-top: 0;
+		margin: 5px 0;
+	}
+}
+
+.service-item {
+	width: calc(33.33% - 20px);
+	display: flex;
+	align-items: center;
+	margin: 20px 10px;
+	h3 {
+		margin: 0;
+	}
+}
+
+.service-description {
+	width: 66.6%;
+	margin: 0 30px;
+} 
+
+.service-icon {
+	width: 33.3%;
+	
+}
+
+.service-icon img {
+	display: block;
+}
+
+// .service-icon {
+// 	position: relative;
+// 	height: 25px;
+// 	width: 25px;
+// 	img {
+// 		position: absolute;
+// 		// left: 0;
+// 	}
+	
+// 	img.top {
+// 		opacity: 0;
+// 		transition: opacity 0.3s;
+// 	}
+
+// 	img.top:hover{
+// 		opacity: 1;
+// 	}
+// }

@@ -1,0 +1,19 @@
+/*CONTACT SECTION STYLINGS*/
+section.contact .wrapper {
+	display: flex;
+	p.preview-section {
+		width: 100%;
+	}
+	textarea, input:not([type="submit"]) {
+		width: 100%;
+	}
+}
+
+.contact-info {
+	width: 50%;
+}
+
+.user-contact-action {
+	width: 50%;
+	margin-left: 20px;
+}

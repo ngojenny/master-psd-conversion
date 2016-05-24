@@ -1,0 +1,27 @@
+/* SKILLS STYLINGS*/
+section.skills {
+	background-color: $lighterGrey;
+}
+section.skills .wrapper {
+	display: flex;
+}
+section.skills .title-container {
+	width: 60%;
+	p.preview-section {
+		width: 100%;
+	}
+}
+ul.skills-buzzwords {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 40%;
+	font-size: 1.7rem;
+	padding: 5px;
+	li {
+		flex-grow: 1;
+		margin: 5px;
+		padding: 13px 20px;
+		text-align: center;
+	}
+}

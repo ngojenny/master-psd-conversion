@@ -1,0 +1,42 @@
+/* NEWSLETTER SUBSCRIPTION SECTION STYLINGS */
+section.newsletter-subscription {
+	background-color: $lighterGrey; 
+
+	.wrapper {
+		text-align: center;
+	}
+	
+	.container {
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	form {
+		position: relative;
+	}
+
+	input[type="email"] {
+		padding: 15px 15px 15px 50px;
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		border: none;
+		text-transform: capitalize;
+		padding: 13px 28px;
+		border-radius: 5%;
+	}
+
+	.fa-paper-plane {
+		position: absolute;
+		left: 20px;
+		top: 15px;
+		font-size: 1.8rem;
+	}
+}
+

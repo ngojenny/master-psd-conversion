@@ -1,0 +1,158 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: gothamLight;
+	font-size: 14px;
+	color: lightGrey;
+}
+
+.wrapper {
+	width: 70%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+p.preview-section {
+	width: 60%;
+	font-size: 1.5rem;
+}
+
+section .container {
+	display: flex;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/*TYPOGRAPHY STYLINGS*/
+
+h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h2,
+h3 {
+	color: $darkGrey;
+}
+
+h3 {
+	text-transform: capitalize;
+}
+
+h2 {
+	text-transform: capitalize;
+	font-size: 2.5rem;
+	margin: 15px 0;
+}
+
+.get-started h2,
+.newsletter-subscription h2 {
+	text-transform: none;
+}
+
+a {
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+/*REPEATING STYLES*/
+header,
+section.get-started,
+section.social {
+	color: white;
+	background-size: cover;
+}
+
+section {
+	padding: 70px 0;
+}
+
+/*BUTTON STYLINGS*/
+.btn {
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.accent,
+.buzz-accent-outline,
+.accent-outline {
+	color: $teal;
+}
+
+.btn-accent {
+	background-color: $teal;
+	color: #ffffff;
+}
+
+.btn-outline {
+	border: 2px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+	transition:
+		background-color 0.3s,
+		border 0.3s,
+		color 0.3s;
+	&:hover {
+		@extend .btn-accent;
+		border: 2px solid $teal;
+	}
+}
+
+.buzz-accent-outline,
+.accent-outline {
+	border: 2px solid $teal;
+	background-color: transparent;
+	transition:
+		background 0.3s,
+		color 0.3s,
+}
+
+.accent-outline.sml-btn:hover {
+	background-color: $teal;
+	color: #ffffff;
+	border: none;
+	padding: 12px;
+}
+
+.accent-outline.big-btn:hover {
+	background-image: linear-gradient(45deg, $teal, $blueTeal);
+	color: #ffffff;
+	border: none;
+	padding: 17px 32px;
+}
+
+.big-btn {
+	padding: 15px 30px;
+	font-size: 1.5rem;
+}
+
+.sml-btn {
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+.required {
+	color: #E04F24;
+}
+
